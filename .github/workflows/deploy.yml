@@ -1,8 +1,9 @@
 name: Deployment
 
 on:
-  merge:
-    branches: main
+  pull_request_review:
+    types:
+      - submitted
 
 jobs:
   deploy:
